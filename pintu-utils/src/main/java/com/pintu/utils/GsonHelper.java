@@ -1,4 +1,4 @@
-package org.galaxy.talkroom.utils;
+package com.pintu.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
