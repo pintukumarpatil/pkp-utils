@@ -1,11 +1,18 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
+group = 'com.github.pintukumarpatil'
+version = '2.0'
+sourceCompatibility = 1.8 // java 8
+targetCompatibility = 1.8
 
 android {
     namespace 'com.pintu.utils'
     compileSdk 33
-
+    testFixtures {
+        enable = true
+    }
     defaultConfig {
         minSdk 24
         targetSdk 33
@@ -25,7 +32,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
